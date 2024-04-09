@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+main {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 2px solid gray;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 2px solid black;
+  width: 15rem;
+  min-width: 15rem;
+  font-family: verdana;
+  background-color: #fafafa;
+  overflow: auto;
+}
+
+#navbar header {
+  border-bottom: 2px solid #000000;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0, .8);
+}
+
+.nav-link {
+  padding-left: 1rem;
+  height: 2rem;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-link:hover {
+  background-color: #000;
+  color: white;
+}
+
+section {
+  min-height: 30%;
+  margin-left: 15rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  background-color: #fafafa;
+}
+
+section p,
+li {
+  font-family: 'Poppins', sans-serif;
+}
+
+section h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+#grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#grid-header p {
+  margin: auto;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.type-grid p {
+  font-weight: bold;
+}
+
+.main-section {
+  padding-top: 2rem;
+  white-space: balance;
+}
+
+.main-section header {
+  font-family: sans-serif;
+  font-size: 1.7rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+.link:hover {
+  text-shadow: 1px 1px 1px #0d0d0d;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#italic {
+  font-style: italic;
+}
+
+
+#decklist {
+  text-decoration: inherit;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#decklist li {
+  font-size: .8rem;
+}
+
+#summary {
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+
+@media (max-width: 400px) {
+  #navbar {
+    flex-direction: column;
+    height: 20%;
+    overflow: scroll;
+    width: 100%;
+  }
+}
+
